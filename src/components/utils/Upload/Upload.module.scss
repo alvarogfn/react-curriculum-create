@@ -1,0 +1,63 @@
+.container {
+  position: relative;
+
+  margin-bottom: 30px;
+
+  padding-right: 20px;
+
+  background-color: #595959;
+  background-image: url("../../../assets/upload.svg");
+  background-repeat: no-repeat;
+  background-position: 97% center;
+
+  color: #f1f1f1;
+
+  border: 1px solid #1d1d1d;
+
+  height: 40px;
+  width: 130px;
+
+  text-transform: uppercase;
+
+  font-size: 0.9rem;
+
+  display: flex;
+  flex-flow: row nowrap;
+
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 0 4px #1d1d1d41;
+
+  cursor: pointer;
+
+  transition: background 300ms, color 300ms;
+
+  &:hover,
+  &:active {
+    background-color: #1d1d1d;
+    color: #f1f1f1;
+  }
+}
+
+.error {
+  text-transform: capitalize;
+
+  position: absolute;
+  z-index: 2;
+
+  bottom: -20px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  font-size: 0.75rem;
+
+  width: max-content;
+
+  color: #a6123a;
+}
+
+.upload {
+  display: none;
+}

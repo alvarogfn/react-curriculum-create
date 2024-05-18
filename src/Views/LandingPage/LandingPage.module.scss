@@ -1,0 +1,56 @@
+@use "../../styles/animations.scss" as *;
+
+.container {
+  width: calc(100vw - 20px);
+  margin: 0px auto 30px;
+  padding: 10px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 30px;
+
+  max-width: 1000px;
+}
+
+.card {
+  display: flex;
+  flex-flow: row wrap;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: #0d0d0d;
+
+  box-shadow: 3px 3px 0 #595959;
+
+  padding: 10px;
+
+  transition: 300ms;
+
+  animation: popout 300ms ease-in-out forwards;
+
+  &:hover {
+    box-shadow: 6px 6px 0 #595959;
+  }
+}
+
+.title {
+  font-size: 2rem;
+  padding: 10px 0;
+
+  color: #f2f2f2;
+}
+
+@media screen and (min-width: 500px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .card {
+    justify-content: space-evenly;
+  }
+
+  .img {
+    width: 250px;
+  }
+}

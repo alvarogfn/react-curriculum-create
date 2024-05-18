@@ -1,0 +1,23 @@
+@keyframes popout {
+  0% {
+    scale: (0.1);
+  }
+  80% {
+    scale: (1.05);
+  }
+  100% {
+    scale: (1);
+  }
+}
+
+@keyframes dropdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

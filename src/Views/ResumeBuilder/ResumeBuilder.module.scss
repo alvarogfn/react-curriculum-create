@@ -1,0 +1,71 @@
+@use "../../styles/animations.scss" as *;
+
+.container {
+  width: calc(100vw - 20px);
+  margin: 20px auto;
+
+  color: #f1f1f1;
+
+  background-color: #0d0d0d;
+  box-shadow: 6px 6px 0 #0d0d0d93;
+
+  padding: 10px;
+
+  max-width: 700px;
+  min-width: 300px;
+
+  animation: popout 300ms ease-in-out forwards;
+}
+
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 5px;
+}
+
+.title {
+  padding: 10px 0px 5px;
+
+  font-size: 2rem;
+  text-align: center;
+
+  text-transform: capitalize;
+}
+
+.legend {
+  font-size: 0.7rem;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  text-align: right;
+}
+
+.button {
+  background-color: #f1f1f1;
+  color: #242426;
+
+  padding: 10px 20px;
+  margin-top: 10px;
+
+  transition: 300ms;
+
+  &:hover {
+    background-color: #595959;
+    color: #f1f1f1;
+  }
+
+  &:disabled {
+    background-color: #a6123a;
+    color: #f1f1f1;
+    cursor: not-allowed;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+}

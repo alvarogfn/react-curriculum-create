@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Khand", sans-serif;
+}
+
+input,
+button {
+  background-color: initial;
+  font-family: inherit;
+  outline: initial;
+  border: initial;
+}
+
+a {
+  color: initial;
+  text-decoration: initial;
+  cursor: pointer;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+  display: flex;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+button {
+  cursor: pointer;
+}
